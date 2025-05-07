@@ -4,16 +4,36 @@ import { Code, Database, Palette, Brain, Gamepad2 } from "lucide-react";
 import SectionTitle from "../ui/SectionTitle";
 import SkillBar from "../ui/SkillBar";
 import { skills } from "../../data/skills";
+import TerminalEffect from "../ui/TerminalEffect";
+import { useEffect, useState } from "react";
 
 const Skills = () => {
+  const [terminalIntroComplete, setTerminalIntroComplete] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTerminalIntroComplete(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [terminalIntroComplete]);
   return (
-    <section className="py-20 bg-gray-800">
+    <section className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Skills"
           subtitle="My technical expertise across different domains"
         />
-
+        {!terminalIntroComplete && (
+          <div className="bg-gray-900/90 p-6 rounded-lg border border-cyan-500/30 mb-10">
+            <TerminalEffect
+              text=">> Initializing skill database...\n>> Accessing neural interface...\n>> Skill matrix loaded successfully."
+              speed={30}
+              className="text-cyan-400 whitespace-pre-line"
+              onComplete={() =>
+                setTimeout(() => setTerminalIntroComplete(true), 1000)
+              }
+            />
+          </div>
+        )}
         {/* Software Development Skills */}
         <div id="skills-software" className="mb-16">
           <motion.div

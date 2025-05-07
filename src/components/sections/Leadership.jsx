@@ -6,7 +6,10 @@ import { leadership } from "../../data/leadership";
 
 const Leadership = () => {
   return (
-    <section id="leadership" className="py-20 bg-gray-900">
+    <section
+      id="leadership"
+      className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Leadership & Volunteering"

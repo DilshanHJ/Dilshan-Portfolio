@@ -11,6 +11,7 @@ import References from "./components/sections/References";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
 import CustomCursor from "./components/ui/CustomCursor";
+import CyberpunkBackground from "./components/ui/CyberpunkBackground";
 
 function App() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -44,21 +45,28 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <CustomCursor position={cursorPosition} isHovering={isHovering} />
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Education />
-        <Skills />
-        <Projects />
-        <Leadership />
-        <References />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="min-h-screen text-white relative">
+      {/* Cyberpunk animated background */}
+      <CyberpunkBackground />
+
+      {/* Content */}
+      <div className="relative z-10">
+        <CustomCursor position={cursorPosition} isHovering={isHovering} />
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Education />
+          <Skills />
+          <Projects />
+          <Leadership />
+          <References />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+      <div className="scanlines"></div>
     </div>
   );
 }

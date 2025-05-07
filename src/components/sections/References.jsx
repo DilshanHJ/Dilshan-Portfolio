@@ -6,7 +6,10 @@ import { references } from "../../data/references";
 
 const References = () => {
   return (
-    <section id="references" className="py-20 bg-gray-800">
+    <section
+      id="references"
+      className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="References"

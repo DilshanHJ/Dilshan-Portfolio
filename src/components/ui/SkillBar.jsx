@@ -20,7 +20,11 @@ const SkillBar = ({ skill, index }) => {
           whileInView={{ width: `${skill.level}%` }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
-          className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-purple-500"
+          className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 neon-flicker"
+          style={{
+            boxShadow:
+              "0 0 5px rgba(6, 182, 212, 0.7), 0 0 10px rgba(6, 182, 212, 0.3)",
+          }}
         ></motion.div>
       </div>
     </motion.div>

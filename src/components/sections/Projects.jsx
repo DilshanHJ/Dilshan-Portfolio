@@ -21,7 +21,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-800">
+    <section
+      id="projects"
+      className="py-20 bg-gray-900/90 backdrop-blur-3xl relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="My Projects"
@@ -55,7 +58,7 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.5 }}
-                className="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-gray-700 hover:border-cyan-400/50 transition-all duration-300"
+                className="bg-gray-900/80 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-gray-700 hover:border-cyan-400/50 hover:neon-border transition-all duration-300 holographic-card"
                 onMouseEnter={() => setHoveredProject(project.id)}
                 onMouseLeave={() => setHoveredProject(null)}
               >

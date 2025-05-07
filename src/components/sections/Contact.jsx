@@ -47,7 +47,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section
+      id="contact"
+      className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Contact Me"
@@ -185,10 +188,16 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold rounded-full hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center justify-center disabled:opacity-70"
+                className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold rounded-full hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center justify-center disabled:opacity-70 relative overflow-hidden group"
+                style={{
+                  boxShadow:
+                    "0 0 10px rgba(6, 182, 212, 0.5), 0 0 20px rgba(6, 182, 212, 0.2)",
+                }}
               >
+                {/* Add a pseudo-element for the glow effect */}
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 {isSubmitting ? (
-                  <span className="flex items-center">
+                  <span className="flex items-center relative z-10">
                     <svg
                       className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +221,7 @@ const Contact = () => {
                     Sending...
                   </span>
                 ) : (
-                  <span className="flex items-center">
+                  <span className="flex items-center relative z-10">
                     <Send size={18} className="mr-2" />
                     Send Message
                   </span>

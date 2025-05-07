@@ -6,7 +6,10 @@ import { experience } from "../../data/experience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-gray-800">
+    <section
+      id="experience"
+      className="py-20 bg-gray-900/90 backdrop-blur-lg relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Experience"

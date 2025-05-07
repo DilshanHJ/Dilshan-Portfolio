@@ -6,7 +6,10 @@ import { education } from "../../data/education";
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 bg-gray-900">
+    <section
+      id="education"
+      className="py-20 bg-gray-900/90 backdrop-blur-3xl relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Education"

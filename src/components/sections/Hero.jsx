@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { personalInfo } from "../../data/personalInfo";
+import DataMatrix from "../ui/DataMatrix";
+import GlitchText from "../ui/GlitchText";
 
 const Hero = () => {
   return (
@@ -9,12 +11,11 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Animated background grid */}
-      <div className="absolute inset-0 grid-background"></div>
-
-      {/* Gradient overlay */}
+      {/* <div className="absolute inset-0 grid-background"></div> */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/90 to-gray-900"></div>
-
+      <div className="absolute top-0 left-0 w-full h-full opacity-10 z-0">
+        <DataMatrix className="w-full h-full" />
+      </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
           <motion.div
@@ -25,9 +26,10 @@ const Hero = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               <span className="text-white">Hi, I'm </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 glow-text">
-                {personalInfo.name}
-              </span>
+              <GlitchText
+                text={personalInfo.name}
+                className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 glow-text"
+              />
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
               {personalInfo.title}
