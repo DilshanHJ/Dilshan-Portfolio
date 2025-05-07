@@ -105,7 +105,7 @@ const Hero = () => {
               repeatType: "reverse",
               repeatDelay: 0.5,
             }}
-            className="absolute bottom-10"
+            className="absolute bottom-0"
           >
             <a
               href="#about"

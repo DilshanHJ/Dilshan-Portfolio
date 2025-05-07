@@ -63,12 +63,12 @@ const GlitchText = ({ text, className }) => {
           >
             {glitchText}
           </span>
-          <span
+          {/* <span
             className="absolute top-0 left-0 ml-1 text-blue-500 opacity-70"
             aria-hidden="true"
           >
             {glitchText}
-          </span>
+          </span> */}
         </>
       )}
     </span>

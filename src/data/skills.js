@@ -39,5 +39,8 @@ export const skills = {
     { name: "Time & Task Management", level: 85 },
     { name: "Fast Learner / Self-Motivated", level: 90 },
     { name: "Multitasking Ability", level: 85 },
+    { name: "Teamwork", level: 80 },
+    { name: "Communication", level: 85 },
+    { name: "Adaptability", level: 80 },
   ],
 };

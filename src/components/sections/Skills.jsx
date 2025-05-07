@@ -16,7 +16,10 @@ const Skills = () => {
     return () => clearTimeout(timer);
   }, [terminalIntroComplete]);
   return (
-    <section className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10">
+    <section
+      id="skills"
+      className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Skills"
