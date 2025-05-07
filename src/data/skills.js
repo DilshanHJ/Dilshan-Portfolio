@@ -1,0 +1,43 @@
+export const skills = {
+  softwareDevelopment: [
+    { name: "JavaScript", level: 90 },
+    { name: "Java", level: 85 },
+    { name: "Python", level: 80 },
+    { name: "PHP", level: 75 },
+    { name: "Dart", level: 80 },
+    { name: "HTML/CSS", level: 90 },
+    { name: "React.js", level: 85 },
+    { name: "Vue.js", level: 85 },
+    { name: "Next.js", level: 80 },
+    { name: "Node.js/Express.js", level: 85 },
+    { name: "Laravel", level: 75 },
+    { name: "Flutter", level: 80 },
+    { name: "CodeIgniter", level: 70 },
+  ],
+  gameDevelopment: [
+    { name: "Java Game Engine (JOGL)", level: 80 },
+    { name: "OpenGL", level: 75 },
+    { name: "Game Physics", level: 70 },
+    { name: "Animation Systems", level: 75 },
+  ],
+  databases: [
+    { name: "MySQL", level: 85 },
+    { name: "MongoDB", level: 80 },
+    { name: "Database Design", level: 85 },
+    { name: "SQL Query Optimization", level: 75 },
+  ],
+  design: [
+    { name: "Photoshop", level: 80 },
+    { name: "Illustrator", level: 75 },
+    { name: "AutoCAD (2D & 3D)", level: 85 },
+    { name: "UI/UX Design", level: 75 },
+  ],
+  softSkills: [
+    { name: "Attention to Detail", level: 90 },
+    { name: "Creative Problem Solving", level: 85 },
+    { name: "Leadership & Organization", level: 80 },
+    { name: "Time & Task Management", level: 85 },
+    { name: "Fast Learner / Self-Motivated", level: 90 },
+    { name: "Multitasking Ability", level: 85 },
+  ],
+};

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #111827;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+  mix-blend-mode: difference;
+}
+
+/* Animated background grid */
+.grid-background {
+  background-size: 50px 50px;
+  background-image: linear-gradient(
+      to right,
+      rgba(26, 32, 44, 0.3) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(26, 32, 44, 0.3) 1px, transparent 1px);
+  animation: moveGrid 15s linear infinite;
+}
+
+@keyframes moveGrid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
