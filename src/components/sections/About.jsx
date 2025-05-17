@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 bg-gray-900/90 backdrop-blur-sm relative z-10"
+      className="relative z-10 py-20 bg-gray-900/90 backdrop-blur-sm"
     >
       <div
         className="absolute inset-0 z-0 opacity-5"
@@ -18,10 +18,10 @@ const About = () => {
           backgroundSize: "480px 480px",
         }}
       ></div>
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <SectionTitle title="About Me" subtitle="Get to know me better" />
 
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col gap-10 md:flex-row">
           {/* Profile Image */}
           <motion.div
             className="md:w-1/3"
@@ -31,12 +31,12 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-purple-600 rounded-lg transform rotate-6 scale-105 opacity-30 blur-sm"></div>
-              <div className="relative overflow-hidden rounded-lg border-2 border-gray-700">
+              <div className="absolute inset-0 transform scale-105 rounded-lg bg-gradient-to-tr from-cyan-500 to-purple-600 rotate-6 opacity-30 blur-sm"></div>
+              <div className="relative overflow-hidden border-2 border-gray-700 rounded-lg">
                 <img
                   src={profileImage}
                   alt="Hashitha Dilshan"
-                  className="w-full h-auto object-cover"
+                  className="object-cover w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-60"></div>
               </div>
@@ -51,46 +51,46 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-cyan-400">Who am I?</h3>
-            <p className="text-gray-300 mb-6">{personalInfo.bio}</p>
+            <h3 className="mb-4 text-2xl font-bold text-cyan-400">Who am I?</h3>
+            <p className="mb-6 text-gray-300">{personalInfo.bio}</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 gap-4 mb-8 md:grid-cols-2">
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-3">
+                <div className="flex items-center justify-center w-10 h-10 mr-3 bg-gray-800 rounded-full">
                   <User size={18} className="text-cyan-400" />
                 </div>
                 <div>
-                  <span className="text-gray-400 text-sm">Name</span>
+                  <span className="text-sm text-gray-400">Name</span>
                   <p className="text-white">{personalInfo.name}</p>
                 </div>
               </div>
 
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-3">
+                <div className="flex items-center justify-center w-10 h-10 mr-3 bg-gray-800 rounded-full">
                   <MapPin size={18} className="text-cyan-400" />
                 </div>
                 <div>
-                  <span className="text-gray-400 text-sm">Address</span>
+                  <span className="text-sm text-gray-400">Address</span>
                   <p className="text-white">{personalInfo.address}</p>
                 </div>
               </div>
 
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-3">
+                <div className="flex items-center justify-center w-10 h-10 mr-3 bg-gray-800 rounded-full">
                   <Mail size={18} className="text-cyan-400" />
                 </div>
                 <div>
-                  <span className="text-gray-400 text-sm">Email</span>
+                  <span className="text-sm text-gray-400">Email</span>
                   <p className="text-white">{personalInfo.email}</p>
                 </div>
               </div>
 
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-3">
+                <div className="flex items-center justify-center w-10 h-10 mr-3 bg-gray-800 rounded-full">
                   <Phone size={18} className="text-cyan-400" />
                 </div>
                 <div>
-                  <span className="text-gray-400 text-sm">Phone</span>
+                  <span className="text-sm text-gray-400">Phone</span>
                   <p className="text-white">{personalInfo.phone}</p>
                 </div>
               </div>
@@ -100,14 +100,14 @@ const About = () => {
               <a
                 href="/resume.pdf"
                 download
-                className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold rounded-full flex items-center hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
+                className="flex items-center px-6 py-3 font-bold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:shadow-lg hover:shadow-cyan-500/30"
               >
                 <Download size={18} className="mr-2" />
                 Download CV
               </a>
               <a
                 href="#contact"
-                className="px-6 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 font-bold rounded-full hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300"
+                className="px-6 py-3 font-bold transition-all duration-300 bg-transparent border-2 rounded-full border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-gray-900"
               >
                 Contact Me
               </a>

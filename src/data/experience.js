@@ -13,6 +13,32 @@ export const experience = [
     ],
   },
   {
+    position: "Intern Software Engineer",
+    company: "ADLTAN Pvt. Ltd.",
+    duration: "Jan 2024 - Feb 2024",
+    description:
+      "Designed various web applications as a full stack developer In Express.Js and React.js.",
+    responsibilities: [
+      "Full-stack development of web applications",
+      "Designing and implementing database solutions",
+      "Front-end development using React.js",
+      "Back-end development using Node.js and Express.js",
+    ],
+  },
+  {
+    position: "Intern Software Engineer",
+    company: "AXCETRO Pvt. Ltd.",
+    duration: "Feb 2024 - April 2024",
+    description:
+      "Designed various web applications as a full stack developer In Laravel 11 with Vue.js and React.js.",
+    responsibilities: [
+      "Full-stack development of web applications",
+      "Designing and implementing database solutions",
+      "Front-end development using Vue.js and React.js",
+      "Back-end development using Laravel",
+    ],
+  },
+  {
     position: "ICT Technician",
     company: "Eyon Entertainment",
     duration: "October 2018 - December 2018",
