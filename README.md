@@ -2,7 +2,7 @@
 
 A modern, interactive portfolio website built with React, Tailwind CSS, and Framer Motion to showcase my skills, projects, and professional experience.
 
-![Portfolio Preview](public/portfolio-preview.jpg)
+![Portfolio Preview](public/portfolio-preview.png)
 
 ## 🌟 Features
 
