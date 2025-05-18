@@ -284,7 +284,7 @@ export const projects = [
     ],
     images: [proPathSim1, proPathSim2],
     github: null,
-    demo: null,
+    demo: "https://www.linkedin.com/posts/hashitha-dilshan-137327197_java-opengl-gamedev-activity-7329661582173446146-ZJ8g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4k5fsBH7m6wGVSoBNXFeQGJVD4gKe7yyM",
     category: "game",
   },
   {
